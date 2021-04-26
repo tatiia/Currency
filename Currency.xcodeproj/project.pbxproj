@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1957F226361217002E689D /* XmlParserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1957F126361217002E689D /* XmlParserManager.swift */; };
+		5B1957FC2636C8BD002E689D /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1957FB2636C8BD002E689D /* Currency.swift */; };
 		5B566AFA2634A1FA00F646BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B566AF92634A1FA00F646BA /* AppDelegate.swift */; };
 		5B566AFC2634A1FA00F646BA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B566AFB2634A1FA00F646BA /* SceneDelegate.swift */; };
 		5B566AFE2634A1FA00F646BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B566AFD2634A1FA00F646BA /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B1957F126361217002E689D /* XmlParserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlParserManager.swift; sourceTree = "<group>"; };
+		5B1957FB2636C8BD002E689D /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		5B566AF62634A1FA00F646BA /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B566AF92634A1FA00F646BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B566AFB2634A1FA00F646BA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B19580526373B4A002E689D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B1957FB2636C8BD002E689D /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B19580626373B59002E689D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5B566B042634A1FF00F646BA /* LaunchScreen.storyboard */,
+				5B566AFF2634A1FA00F646BA /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5B19580726373B7E002E689D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B566AFD2634A1FA00F646BA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B19580826373B89002E689D /* Main Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5B566AFB2634A1FA00F646BA /* SceneDelegate.swift */,
+				5B566AF92634A1FA00F646BA /* AppDelegate.swift */,
+			);
+			path = "Main Classes";
+			sourceTree = "<group>";
+		};
+		5B19580926373BE6002E689D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B1957F126361217002E689D /* XmlParserManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		5B566AED2634A1FA00F646BA = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +102,12 @@
 		5B566AF82634A1FA00F646BA /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				5B566AF92634A1FA00F646BA /* AppDelegate.swift */,
-				5B566AFB2634A1FA00F646BA /* SceneDelegate.swift */,
-				5B566AFD2634A1FA00F646BA /* ViewController.swift */,
-				5B566AFF2634A1FA00F646BA /* Main.storyboard */,
+				5B19580926373BE6002E689D /* Network */,
+				5B19580826373B89002E689D /* Main Classes */,
+				5B19580726373B7E002E689D /* Controller */,
+				5B19580626373B59002E689D /* Storyboard */,
+				5B19580526373B4A002E689D /* Model */,
 				5B566B022634A1FF00F646BA /* Assets.xcassets */,
-				5B566B042634A1FF00F646BA /* LaunchScreen.storyboard */,
 				5B566B072634A1FF00F646BA /* Info.plist */,
 			);
 			path = Currency;
@@ -138,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B566AFE2634A1FA00F646BA /* ViewController.swift in Sources */,
+				5B1957FC2636C8BD002E689D /* Currency.swift in Sources */,
 				5B566AFA2634A1FA00F646BA /* AppDelegate.swift in Sources */,
+				5B1957F226361217002E689D /* XmlParserManager.swift in Sources */,
 				5B566AFC2634A1FA00F646BA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
